@@ -2,7 +2,8 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Portfólio — Ernesto Bento Figueiredo dos Santos</title>
   <meta name="description" content="Portfólio de Desenvolvedor Front-End — Ernesto Bento. Projetos, skills e contato." />
 
@@ -12,10 +13,12 @@
   <!-- JS principal -->
   <script src="script.js" defer></script>
 </head>
+
 <body data-theme="dark">
   <div class="container" id="top">
-    <!-- Header -->
-    <header>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
       <a href="#top" class="brand" aria-label="Voltar ao topo">
         <div class="logo" aria-hidden="true"><span>ES</span></div>
         <div class="brand-text">
@@ -25,35 +28,54 @@
       </a>
 
       <nav aria-label="Navegação principal" id="desktopNav">
-        <a href="#sobre"><span>Sobre</span></a>
-        <a href="#projetos"><span>Projetos</span></a>
-        <a href="#skills"><span>Skills</span></a>
-        <a href="#contato"><span>Contato</span></a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#skills">Skills</a>
+        <a href="#contato">Contato</a>
       </nav>
 
       <div class="header-actions">
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Alternar tema"
+        >
           <span class="theme-toggle-icon" id="themeIcon">🌙</span>
           <span id="themeLabel">Dark</span>
         </button>
-        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu">
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-label="Abrir menu"
+        >
           ☰
         </button>
       </div>
     </header>
 
-    <!-- Hero -->
-    <div class="hero reveal">
+    <!-- ================= HERO ================= -->
+    <section class="hero reveal">
       <div class="hero-card" role="region" aria-label="Apresentação">
-        <h1>Olá — eu sou <span class="hero-highlight">Ernesto Bento Figueiredo dos Santos</span></h1>
+        <h1>
+          <span class="hero-highlight">
+            Ernesto Bento Figueiredo dos Santos
+          </span>
+        </h1>
+
         <p class="lead">
-          Desenvolvedor Front-End em transição de carreira, focado em criar interfaces modernas, responsivas
-          e bem estruturadas, com atenção à experiência do usuário.
+          Desenvolvedor Front-End em transição de carreira, focado em criar
+          interfaces modernas, responsivas e bem estruturadas, com atenção à
+          experiência do usuário.
         </p>
 
         <p class="hero-sub">
-          Atualmente aprofundando conhecimentos em <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e
-          <strong>Angular</strong>, além de estudar <strong>Python</strong> e <strong>SQL</strong> para ampliar minha base técnica.
+          Atualmente aprofundando conhecimentos em
+          <strong>HTML</strong>, <strong>CSS</strong>,
+          <strong>JavaScript</strong> e <strong>Angular</strong>, além de estudar
+          <strong>Python</strong> e <strong>SQL</strong>.
         </p>
 
         <div class="cta">
@@ -61,14 +83,20 @@
             <span class="btn-icon">🚀</span>
             <span>Ver projetos</span>
           </a>
-          <a class="btn" href="cv-ernesto-bento.pdf" target="_blank" rel="noopener">
+
+          <a
+            class="btn"
+            href="cv-ernesto-bento.pdf"
+            target="_blank"
+            rel="noopener"
+          >
             <span class="btn-icon">📄</span>
             <span>Baixar CV</span>
           </a>
         </div>
 
         <div class="hero-meta">
-          <div class="hero-meta-label">Stack principal:</div>
+          <span class="hero-meta-label">Stack principal:</span>
           <div class="tags" aria-hidden="true">
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
@@ -81,322 +109,348 @@
 
       <aside class="profile" aria-label="Perfil resumido">
         <div class="avatar" aria-hidden="true"><span>ES</span></div>
-        <div>
+
+        <div class="profile-content">
           <div class="profile-title">Ernesto Bento Figueiredo dos Santos</div>
           <small>Frontend Developer • Mestrando em RI</small>
+
           <p>
-            Desenvolvedor Front-End em formação, com experiência em projetos pessoais utilizando HTML, CSS,
-            JavaScript e Angular. Atualmente cursando Python e SQL e estudando Front-End pela Toti, em busca
-            da primeira oportunidade como dev júnior.
+            Desenvolvedor Front-End em formação, com experiência em projetos
+            pessoais utilizando HTML, CSS, JavaScript e Angular. Estudando Python
+            e SQL, em busca da primeira oportunidade como dev júnior.
           </p>
 
-          <div style="margin-top:0.6rem;display:flex;gap:0.5rem;flex-wrap:wrap">
-            <a class="btn" href="https://github.com/Ernestosantos90" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn" href="https://www.linkedin.com/in/ernesto-dos-santos-b667051aa" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" href="http://wa.me/5571991745129" target="_blank" rel="noopener">whatsapp</a>
+          <div class="profile-actions">
+            <a
+              class="btn"
+              href="https://github.com/Ernestosantos90"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub
+            </a>
+
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/ernesto-dos-santos-b667051aa"
+              target="_blank"
+              rel="noopener"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              class="btn"
+              href="http://wa.me/5571991745129"
+              target="_blank"
+              rel="noopener"
+            >
+              WhatsApp
+            </a>
           </div>
         </div>
       </aside>
-    </div>
+    </section>
 
-    <!-- Sobre -->
+    <!-- ================= SOBRE ================= -->
     <section id="sobre" class="reveal">
       <h2>Sobre mim</h2>
+
       <div class="card about">
         <p>
-          Sou o Ernesto Bento Figueiredo dos Santos, desenvolvedor Front-End em transição de carreira e mestrando em Relações
-          Internacionais pela UNIFESP – Osasco. Tenho foco em criar interfaces modernas, responsivas e
-          bem estruturadas, sempre pensando em clareza e experiência do usuário.
+          Sou o Ernesto Bento Figueiredo dos Santos, desenvolvedor Front-End em
+          transição de carreira e mestrando em Relações Internacionais pela
+          UNIFESP – Osasco. Tenho foco em criar interfaces modernas, responsivas e
+          bem estruturadas.
         </p>
+
         <p>
-          Estudei Desenvolvimento Front-End na Toti, com HTML, CSS, JavaScript e boas práticas de código.
-          Paralelamente, venho aprofundando meus estudos em Angular, Python e SQL, conectando desenvolvimento
-          web com análise de dados.
+          Estudei Desenvolvimento Front-End na Toti, com HTML, CSS, JavaScript e
+          boas práticas. Atualmente aprofundo estudos em Angular, Python e SQL,
+          conectando desenvolvimento web com análise de dados.
         </p>
+
         <p class="muted">
-          <strong>Formação:</strong> Mestrado em Relações Internacionais – UNIFESP (em andamento) · Curso de Front-End – Toti Diversidade<br />
+          <strong>Formação:</strong> Mestrado em Relações Internacionais – UNIFESP
+          (em andamento) · Curso de Front-End – Toti Diversidade<br />
           <strong>Contato:</strong> ladiobenkz@gmail.com • São Paulo, Brasil
         </p>
       </div>
     </section>
 
-    <!-- Skills -->
+    <!-- ================= SKILLS ================= -->
     <section id="skills" class="reveal">
       <h2>Skills</h2>
+
       <div class="card">
         <div class="skills-grid">
           <div class="skill">
             <strong>HTML</strong>
-            <small>Estrutura semântica, acessibilidade básica</small>
+            <small>Estrutura semântica e acessibilidade</small>
           </div>
+
           <div class="skill">
             <strong>CSS</strong>
-            <small>Flexbox, Grid, responsividade</small>
+            <small>Flexbox, Grid e responsividade</small>
           </div>
+
           <div class="skill">
             <strong>JavaScript</strong>
-            <small>ES6+, DOM, consumo de APIs</small>
+            <small>ES6+, DOM e APIs</small>
           </div>
+
           <div class="skill">
             <strong>Angular</strong>
-            <small>Componentes, rotas, serviços</small>
+            <small>Componentes, rotas e serviços</small>
           </div>
+
           <div class="skill">
             <strong>Git &amp; GitHub</strong>
-            <small>Controle de versão e colaboração</small>
+            <small>Versionamento e colaboração</small>
           </div>
+
           <div class="skill">
             <strong>Python</strong>
-            <small>Fundamentos, lógica e automação</small>
+            <small>Fundamentos e automação</small>
           </div>
+
           <div class="skill">
             <strong>SQL</strong>
-            <small>Consultas, filtros e modelagem básica</small>
+            <small>Consultas e modelagem básica</small>
           </div>
+
           <div class="skill">
             <strong>Soft Skills</strong>
-            <small>Comunicação, disciplina e organização</small>
+            <small>Comunicação, organização e disciplina</small>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projetos -->
+    <!-- ================= PROJETOS ================= -->
     <section id="projetos" class="reveal">
       <h2>Projetos</h2>
 
-      <!-- Banner destacado do Sistema de Caixa -->
-      <div class="project-banner">
+      <!-- Projeto em destaque -->
+      <div class="project-banner destaque">
         <div class="banner-content">
           <span class="badge">Projeto Front-End</span>
+
           <h3>Mercado do Tio João</h3>
           <h4>Sistema de Caixa & Atendimento</h4>
+
           <p>
-            Sistema completo de atendimento para mini mercado, com fila de clientes, carrinho dinâmico,
-            controle de quantidades, cálculo automático de totais e seleção de forma de pagamento.
-            Desenvolvido em HTML, CSS e JavaScript.
+            Sistema completo de atendimento para mini mercado, com fila de
+            clientes, carrinho dinâmico, controle de quantidades, cálculo
+            automático de totais e formas de pagamento.
           </p>
+
           <div class="banner-actions">
-            <a href="https://ernestosantos90.github.io/mercado-tio-joao-caixa/" target="_blank" rel="noopener">
-              <span>🔗 Ver projeto</span>
-            </a>
-            <a href="https://github.com/Ernestosantos90/mercado-tio-joao-caixa" target="_blank" rel="noopener">
-              <span>💻 Código no GitHub</span>
+            <a
+              href="https://ernestosantos90.github.io/mercado-tio-joao-caixa/"
+              target="_blank"
+              rel="noopener"
+            >
+              🔗 Ver projeto
             </a>
           </div>
         </div>
+
         <div class="banner-graphic" aria-hidden="true"></div>
       </div>
 
       <div class="projects-grid">
-        <!-- Projeto 1: Dashboard -->
+
+        <!-- Dashboard -->
         <article class="card project" aria-labelledby="proj-dashboard-title">
-  <!-- Banner visual do Dashboard de Métricas -->
-  <article class="card project" aria-labelledby="proj-dashboard-title">
-  <!-- Banner visual do Dashboard de Métricas -->
-  <div class="project-banner dashboard-banner">
-    <div class="banner-content">
+          <div class="project-banner dashboard-banner">
+            <div class="banner-content">
+              <span class="badge">Dashboard</span>
 
-      <span class="badge">Dashboard de Métricas</span>
+              <h3 id="proj-dashboard-title">Dashboard de Métricas</h3>
 
-      <h3 id="proj-dashboard-title">Dashboard de Métricas</h3>
+              <p class="muted">
+                Dashboard para visualização de indicadores com cards de resumo,
+                layout em grid e componentes reutilizáveis usando Angular.
+              </p>
 
-      <p class="muted">
-        Interface de dashboard para visualização de indicadores, com cards de resumo, área para gráficos
-        e seção de ranking. Projeto pensado para treinar componentes reutilizáveis, layout em grid
-        e organização de dados usando Angular.
-      </p>
+              <div class="tags">
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">CSS Grid</span>
+              </div>
 
-      <div class="tags">
-        <span class="tag">Angular</span>
-        <span class="tag">TypeScript</span>
-        <span class="tag">CSS Grid</span>
+              <div class="project-actions">
+                <a class="btn" href="#" target="_blank" rel="noopener">Ver demo</a>
+                <a
+                  class="btn"
+                  href="https://github.com/Ernestosantos90"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Código
+                </a>
+              </div>
+            </div>
+
+            <div class="metric-towers" aria-hidden="true">
+              <span class="tower tower-1"></span>
+              <span class="tower tower-2"></span>
+              <span class="tower tower-3"></span>
+              <span class="tower tower-4"></span>
+            </div>
+
+            <div class="banner-graphic dashboard-graphic"></div>
+          </div>
+        </article>
+
+        <!-- Landing Page -->
+        <article class="card project" aria-labelledby="proj-landing-title">
+          <div class="project-banner">
+            <div class="banner-content">
+              <span class="badge">Projeto Front-End</span>
+
+              <h3 id="proj-landing-title">Landing Page Responsiva</h3>
+
+              <p class="muted">
+                Landing page moderna construída com HTML e CSS, com foco em
+                tipografia, hierarquia visual e responsividade.
+              </p>
+
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Responsividade</span>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  class="btn"
+                  href="https://ernestosantos90.github.io/Landing-page-responsivo/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Ver demo
+                </a>
+              </div>
+            </div>
+
+            <div class="banner-graphic"></div>
+          </div>
+        </article>
+
       </div>
-
-      <div class="project-actions">
-        <a class="btn" href="#" target="_blank" rel="noopener">
-          Ver demo
-        </a>
-        <a class="btn" href="https://github.com/Ernestosantos90" target="_blank" rel="noopener">
-          Código
-        </a>
-      </div>
-    </div>
-
-    <!-- Mini gráfico em torres (visual) -->
-    <div class="metric-towers" aria-hidden="true">
-      <span class="tower tower-1"></span>
-      <span class="tower tower-2"></span>
-      <span class="tower tower-3"></span>
-      <span class="tower tower-4"></span>
-    </div>
-
-    <!-- Glow de fundo -->
-    <div class="banner-graphic dashboard-graphic"></div>
-  </div>
-</article>
-
-
-    <!-- Efeito visual do banner -->
-    <div class="banner-graphic dashboard-graphic"></div>
-  </div>
-</article>
-
-
-<!-- Projeto 2: Landing Page -->
-        <article class="card project" aria-labelledby="proj2-title">
-  <!-- Banner visual -->
-  <div class="project-banner">
-    <div class="banner-content">
-      <span class="badge">Projeto Front-End</span>
-
-      <h3 id="proj2-title">Landing Page Responsiva</h3>
-      <p class="muted">
-        Landing page moderna construída com HTML e CSS, com foco em tipografia, hierarquia visual,
-        seções bem definidas (hero, benefícios, CTA) e responsividade completa para mobile.
-      </p>
-
-      <div class="tags">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">Responsividade</span>
-      </div>
-
-      <div class="project-actions">
-        <a class="btn" href="https://ernestosantos90.github.io/Landing-page-responsivo/" target="_blank" rel="noopener">
-          Ver demo
-        </a>
-        <a class="btn" href="https://github.com/Ernestosantos90/Landing-page-responsivo" target="_blank" rel="noopener">
-          Código
-        </a>
-      </div>
-    </div>
-
-    <!-- Elemento gráfico do banner -->
-    <div class="banner-graphic"></div>
-  </div>
-</article>
-
-
-<!-- Projeto 3: Mercado do Tio João (card na grade) -->
-    <article class="card project" aria-labelledby="proj-mercado-title">
-  <!-- Banner visual do Mercado do Tio João -->
-  <div class="project-banner mercado-banner">
-    <div class="banner-content">
-
-      <span class="badge">Sistema de Caixa</span>
-
-      <h3 id="proj-mercado-title">Sistema de Caixa — Mercado do Tio João</h3>
-
-      <p class="muted">
-        Sistema completo de atendimento com carrinho de compras, quantidades dinâmicas,
-        cálculo automático de totais, formas de pagamento e troco — desenvolvido para 
-        simular o fluxo real de um caixa de mercado.
-      </p>
-
-      <div class="tags">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
-      </div>
-
-      <div class="project-actions">
-        <a 
-          class="btn" 
-          href="https://ernestosantos90.github.io/mercado-tio-joao-caixa/" 
-          target="_blank" 
-          rel="noopener"
-        >
-          Ver demo
-        </a>
-
-        <a 
-          class="btn" 
-          href="https://github.com/Ernestosantos90/mercado-tio-joao-caixa" 
-          target="_blank" 
-          rel="noopener"
-        >
-          Código
-        </a>
-      </div>
-
-    </div>
-
-    <!-- Efeito visual neon -->
-    <div class="banner-graphic mercado-graphic"></div>
-  </div>
-</article>
-
-
-      <!--<p style="margin-top:0.8rem" class="muted">
-        Conforme for publicando projetos no GitHub e fazendo deploy, basta atualizar os links de demo e repositório acima.
-      </p>-->
     </section>
 
-    <!-- Diferenciais -->
+    <!-- ================= DIFERENCIAIS ================= -->
     <section id="extras" class="reveal">
       <h2>Diferenciais</h2>
+
       <div class="card">
-        <ul style="margin:0 0 0.5rem 1.1rem" class="muted">
+        <ul class="muted extras-list">
           <li>Mestrando em Relações Internacionais pela UNIFESP – Osasco.</li>
-          <li>Transição de carreira com foco em Desenvolvimento Front-End.</li>
-          <li>Formação em Front-End pela Toti, com prática em projetos.</li>
-          <li>Estudos em Python, SQL e ferramentas de análise de dados.</li>
-          <li>Perfil disciplinado, criativo, comunicativo e organizado.</li>
+          <li>Transição de carreira para Desenvolvimento Front-End.</li>
+          <li>Formação em Front-End pela Toti.</li>
+          <li>Estudos em Python, SQL e análise de dados.</li>
+          <li>Perfil disciplinado, criativo e organizado.</li>
         </ul>
+
         <small class="muted">
-          Aqui estarei adicionando certificados, eventos, hackathons ou comunidades de tecnologia das quais participarei.
+          Em breve: certificados, eventos e participação em comunidades tech.
         </small>
       </div>
     </section>
 
-    <!-- Contato -->
+    <!-- ================= CONTATO ================= -->
     <section id="contato" class="reveal">
       <h2>Contato</h2>
+
       <div class="card card-contato">
-        <div>
-          <form id="contactForm" novalidate>
-            <label for="name">Nome</label>
-            <input id="name" name="name" required placeholder="Seu nome" />
+        <form id="contactForm" novalidate>
+          <label for="name">Nome</label>
+          <input id="name" name="name" required placeholder="Seu nome" />
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required placeholder="seu@exemplo.com" />
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="seu@exemplo.com"
+          />
 
-            <label for="message">Mensagem</label>
-            <textarea id="message" name="message" required placeholder="Escreva sua mensagem..."></textarea>
+          <label for="message">Mensagem</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Escreva sua mensagem..."
+          ></textarea>
 
-            <div class="contact-actions">
-              <button class="btn primary" type="submit">Enviar</button>
-              <button class="btn" type="button" id="mailtoBtn">Enviar por email</button>
-            </div>
+          <div class="contact-actions">
+            <button class="btn primary" type="submit">Enviar</button>
+            <button class="btn" type="button" id="mailtoBtn">
+              Enviar por email
+            </button>
+          </div>
 
-            <div id="formMsg" class="muted" role="status" aria-live="polite"></div>
-          </form>
-        </div>
+          <div
+            id="formMsg"
+            class="muted"
+            role="status"
+            aria-live="polite"
+          ></div>
+        </form>
 
         <aside class="contato-info">
           <div class="muted">
             <strong>Email</strong><br />
             ladiobenkz@gmail.com
           </div>
+
           <div class="muted">
             <strong>Local</strong><br />
             São Paulo, Brasil
           </div>
+
           <div class="contato-links">
-            <a class="btn" href="https://www.linkedin.com/in/ernesto-dos-santos-b667051aa" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn" href="https://github.com/Ernestosantos90" target="_blank" rel="noopener">GitHub</a>
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/ernesto-dos-santos-b667051aa"
+              target="_blank"
+              rel="noopener"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              class="btn"
+              href="https://github.com/Ernestosantos90"
+              target="_blank"
+              rel="noopener"
+            >
+              GitHub
+            </a>
           </div>
         </aside>
       </div>
     </section>
 
-    <footer>
-      <div>© <span id="year"></span> Ernesto Bento Figueiredo dos Santos. Todos os direitos reservados.</div>
-      <div class="muted">Construído com HTML, CSS e JS • Dark/Light mode • Animações suaves</div>
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div>
+        © <span id="year"></span> Ernesto Bento Figueiredo dos Santos. Todos os
+        direitos reservados.
+      </div>
+
+      <div class="muted">
+        Construído com HTML, CSS e JavaScript • Dark/Light mode • Animações suaves
+      </div>
     </footer>
+
   </div>
 </body>
 </html>
+
 
 
