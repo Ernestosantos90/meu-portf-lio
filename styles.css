@@ -316,7 +316,7 @@ body[data-theme="light"] .btn {
 }
 
 .btn.primary {
-  background: linear-gradient(90deg, var(--accent), #4ade80);
+  background: linear-gradient(90deg, var(--accent), #729b81ff);
   color: #022c22;
   border-color: transparent;
   box-shadow: 0 14px 40px rgba(34, 197, 94, 0.35);
@@ -324,7 +324,7 @@ body[data-theme="light"] .btn {
 
 .btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.45);
+  box-shadow: 0 8px 26px rgba(11, 11, 37, 0.45);
   border-color: rgba(148, 163, 184, 0.4);
 }
 
