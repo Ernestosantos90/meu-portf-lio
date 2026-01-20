@@ -12,8 +12,14 @@
   --maxw: 1100px;
   --gap: 1.25rem;
   --transition-fast: 180ms ease-out;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    "Segoe UI", Roboto, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Text",
+    "Segoe UI",
+    Roboto,
+    sans-serif;
 }
 
 /* Light theme override */
@@ -53,7 +59,9 @@ body {
   padding: 2rem 1rem;
   display: flex;
   justify-content: center;
-  transition: background 260ms ease-out, color 160ms ease-out;
+  transition:
+    background 260ms ease-out,
+    color 160ms ease-out;
 }
 
 body[data-theme="light"] {
@@ -132,7 +140,9 @@ nav a {
   border-radius: 999px;
   position: relative;
   overflow: hidden;
-  transition: color var(--transition-fast), background var(--transition-fast),
+  transition:
+    color var(--transition-fast),
+    background var(--transition-fast),
     transform 140ms ease-out;
 }
 
@@ -185,7 +195,9 @@ nav a:focus-visible::before {
   cursor: pointer;
   color: var(--muted);
   backdrop-filter: blur(18px);
-  transition: background var(--transition-fast), transform 120ms ease-out,
+  transition:
+    background var(--transition-fast),
+    transform 120ms ease-out,
     border-color var(--transition-fast);
 }
 
@@ -236,8 +248,11 @@ body[data-theme="light"] .nav-toggle {
   overflow: hidden;
   backdrop-filter: blur(22px);
   transform-origin: top;
-  transition: transform 260ms ease-out, box-shadow 260ms ease-out,
-    border-color 220ms ease-out, background 260ms ease-out;
+  transition:
+    transform 260ms ease-out,
+    box-shadow 260ms ease-out,
+    border-color 220ms ease-out,
+    background 260ms ease-out;
 }
 
 .hero-card::after {
@@ -307,8 +322,18 @@ body[data-theme="light"] .hero-card {
   color: var(--text);
   cursor: pointer;
   gap: 0.35rem;
-  transition: background var(--transition-fast), transform 120ms ease-out,
-    box-shadow 160ms ease-out, border-color 160ms ease-out;
+  transition:
+    background var(--transition-fast),
+    transform 120ms ease-out,
+    box-shadow 160ms ease-out,
+    border-color 160ms ease-out;
+}
+
+/*botao da imagen icone*/
+.btn-icon img {
+  width: 24px; /* controla o tamanho do ícone */
+  height: 24px;
+  display: block;
 }
 
 body[data-theme="light"] .btn {
@@ -386,8 +411,11 @@ body[data-theme="light"] .tag {
   overflow: hidden;
   backdrop-filter: blur(18px);
   transform-origin: top;
-  transition: transform 260ms ease-out, box-shadow 260ms ease-out,
-    border-color 220ms ease-out, background 260ms ease-out;
+  transition:
+    transform 260ms ease-out,
+    box-shadow 260ms ease-out,
+    border-color 220ms ease-out,
+    background 260ms ease-out;
 }
 
 .profile::before {
@@ -450,6 +478,28 @@ body[data-theme="light"] .profile {
   z-index: 1;
 }
 
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f1724;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+
+  transform: scale(1.12); /* 🔥 aumenta sem empurrar */
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ocupa sem distorcer */
+  display: block;
+}
+
 .profile-title {
   font-weight: 600;
 }
@@ -486,8 +536,11 @@ h2 {
   border: 1px solid var(--border-subtle);
   box-shadow: 0 14px 40px rgba(15, 23, 42, 0.7);
   backdrop-filter: blur(16px);
-  transition: transform 220ms ease-out, box-shadow 220ms ease-out,
-    background 220ms ease-out, border-color 180ms ease-out;
+  transition:
+    transform 220ms ease-out,
+    box-shadow 220ms ease-out,
+    background 220ms ease-out,
+    border-color 180ms ease-out;
 }
 
 body[data-theme="light"] .card {
@@ -521,8 +574,11 @@ body[data-theme="light"] .card {
   text-align: left;
   font-size: 0.88rem;
   border: 1px solid rgba(148, 163, 184, 0.28);
-  transition: transform 180ms ease-out, box-shadow 180ms ease-out,
-    border-color 180ms ease-out, background 180ms ease-out;
+  transition:
+    transform 180ms ease-out,
+    box-shadow 180ms ease-out,
+    border-color 180ms ease-out,
+    background 180ms ease-out;
 }
 
 body[data-theme="light"] .skill {
@@ -577,8 +633,11 @@ body[data-theme="light"] .skill:hover {
   background: #020617;
   border: 1px solid rgba(15, 23, 42, 0.8);
   transform: translateY(0);
-  transition: transform 210ms ease-out, box-shadow 210ms ease-out,
-    filter 210ms ease-out, border-color 180ms ease-out;
+  transition:
+    transform 210ms ease-out,
+    box-shadow 210ms ease-out,
+    filter 210ms ease-out,
+    border-color 180ms ease-out;
 }
 
 .project:hover img {
@@ -805,8 +864,11 @@ textarea {
   border-radius: 9px;
   color: inherit;
   font: inherit;
-  transition: border-color 180ms ease-out, box-shadow 180ms ease-out,
-    background 180ms ease-out, transform 120ms ease-out;
+  transition:
+    border-color 180ms ease-out,
+    box-shadow 180ms ease-out,
+    background 180ms ease-out,
+    transform 120ms ease-out;
 }
 
 body[data-theme="light"] input,
@@ -868,7 +930,9 @@ footer {
 .reveal {
   opacity: 0;
   transform: translateY(18px) scale(0.99);
-  transition: opacity 420ms ease-out, transform 420ms ease-out;
+  transition:
+    opacity 420ms ease-out,
+    transform 420ms ease-out;
 }
 
 .reveal.visible {
@@ -923,4 +987,5 @@ footer {
     align-items: flex-start;
   }
 }
+
 
