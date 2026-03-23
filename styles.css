@@ -202,7 +202,7 @@ nav a:focus-visible::before {
 }
 
 body[data-theme="light"] .theme-toggle {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.45);
 }
 
 .theme-toggle:hover {
@@ -460,6 +460,7 @@ body[data-theme="light"] .profile {
 }
 
 .avatar::after {
+  display: none;
   content: "";
   position: absolute;
   inset: 18%;
@@ -973,19 +974,142 @@ footer {
   body {
     padding: 1.2rem 0.9rem 1.6rem;
   }
+
   .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   .card[style*="grid-template-columns"],
   .card-contato {
     grid-template-columns: 1fr !important;
   }
+
   .hero-card {
-    padding: 1.6rem 1.4rem;
+    padding: 1.4rem 1.1rem;
   }
+
+  .profile {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2rem 1rem;
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px;
+    transform: scale(1);
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .hero p.lead {
+    font-size: 0.95rem;
+  }
+
+  .hero-meta {
+    width: 100%;
+    gap: 0.65rem;
+    justify-content: flex-start;
+  }
+
+  .btn {
+    padding: 0.55rem 0.8rem;
+  }
+
   header {
     align-items: flex-start;
   }
+}
+
+@media (max-whith: 786px) {
+  .hero-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .hero-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+  .hero-role {
+    align-self: flex-start;
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+
+/*Ajustes be estilo para ficar bonito*/
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.avatar,
+.hero-header,
+.hero-text,
+.hero-meta {
+  opacity: 0;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.avatar { animation-delay: 0.1s; }
+.hero-header { animation-delay: 0.25s; }
+.hero-text { animation-delay: 0.4s; }
+.hero-meta { animation-delay: 0.55s; }
+
+.avatar img {
+  transition: transform 0.35s ease;
+}
+
+.avatar:hover img {
+  transform: scale(1.04);
+}
+
+.btn-icon {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/*movimentações da imagem do avatar*/
+
+.avatar {
+    padding: 4px;
+    border-radius: 50%;
+    background: linear-gradient (135deg, #00ff99, #729bff);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.avatar img{
+    border-radius: 50%;
+    display: block;
+
 }
 
 
