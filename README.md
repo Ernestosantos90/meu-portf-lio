@@ -6,7 +6,7 @@ Desenvolvedor **Backend Java** com foco em **Spring Boot, PostgreSQL e APIs REST
 
 - 🛒 **Básico Shopp** — E-commerce full stack (Java, Spring Boot, PostgreSQL, Next.js, JWT, Docker). Demo: https://basico-shopp.vercel.app/
 - 🏪 **Mercado do Tio João** — Sistema de caixa e atendimento (HTML, CSS, JavaScript). Demo: https://ernestosantos90.github.io/mercado-tio-joao-caixa/
-- 📊 **Dashboard de Métricas** — Angular, TypeScript, CSS Grid.
+- 📊 **Dashboard de Métricas** — Angular, TypeScript, CSS Grid. Demo: https://ernestosantos90.github.io/dashboard-metricas/
 - 🌐 **Landing Page Responsiva** — HTML e CSS. Demo: https://ernestosantos90.github.io/Landing-page-responsivo/
 
 ## 🛠️ Competências
