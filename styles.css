@@ -582,6 +582,17 @@ body[data-theme="light"] .card {
     background 180ms ease-out;
 }
 
+.skill-icon {
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin-bottom: 0.45rem;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.25rem;
+}
+
 body[data-theme="light"] .skill {
   background: rgba(255, 255, 255, 0.98);
 }
@@ -666,6 +677,30 @@ body[data-theme="light"] .skill:hover {
   flex-wrap: wrap;
 }
 
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-decoration: none;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.project-status:hover,
+.project-status:focus-visible {
+  color: var(--text);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  outline: none;
+}
+
 /* Banner especial do Dashboard de Métricas */
 .dashboard-banner {
   background: linear-gradient(135deg, #020617, #0f172a, #1d2448);
@@ -673,6 +708,7 @@ body[data-theme="light"] .skill:hover {
 
 .dashboard-banner h3 {
   background: linear-gradient(90deg, #38bdf8, #6366f1, #a855f7);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -696,6 +732,8 @@ body[data-theme="light"] .skill:hover {
   background: rgba(15, 23, 42, 0.85);
   border: 1px solid rgba(148, 163, 184, 0.4);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.8);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .metric-towers .tower {
@@ -765,6 +803,40 @@ body[data-theme="light"] .skill:hover {
   gap: 1.5rem;
 }
 
+.mercado-banner {
+  background: linear-gradient(135deg, #3f1111, #7f1d1d, #451a03);
+}
+
+.basico-banner {
+  background: linear-gradient(135deg, #450a0a, #991b1b 58%, #ca8a04);
+}
+
+.basico-banner .banner-graphic {
+  width: 150px;
+  height: 150px;
+  right: 1.2rem;
+  top: 50%;
+  border-radius: 24px;
+  background-image: url("portfolio-assets/imagem%20basico.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: none;
+  opacity: 0.95;
+  transform: translateY(-50%);
+}
+
+.basico-banner .banner-content {
+  padding-right: 8rem;
+}
+
+.project-banner .banner-content {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  max-width: min(100%, 560px);
+}
+
 .project-banner .badge {
   display: inline-block;
   padding: 0.25rem 0.7rem;
@@ -780,6 +852,7 @@ body[data-theme="light"] .skill:hover {
   margin: 0.6rem 0 0.15rem;
   font-size: 1.4rem;
   background: linear-gradient(90deg, #ef4444, #eab308, #ffffff);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -837,6 +910,46 @@ body[data-theme="light"] .skill:hover {
   filter: blur(30px);
   opacity: 0.45;
   pointer-events: none;
+}
+
+body[data-theme="light"] .project-banner {
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  border-color: rgba(15, 23, 42, 0.12);
+  box-shadow: 0 14px 36px rgba(100, 116, 139, 0.28);
+}
+
+body[data-theme="light"] .mercado-banner {
+  background: linear-gradient(135deg, #fee2e2, #fecaca, #fef3c7);
+}
+
+body[data-theme="light"] .basico-banner {
+  background: linear-gradient(135deg, #fee2e2, #fecaca 58%, #fef3c7);
+}
+
+body[data-theme="light"] .dashboard-banner {
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe, #ede9fe);
+}
+
+body[data-theme="light"] .project-banner h3 {
+  background: linear-gradient(90deg, #b91c1c, #b45309, #7f1d1d);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+body[data-theme="light"] .project-banner h4,
+body[data-theme="light"] .project-banner p {
+  color: #334155;
+}
+
+body[data-theme="light"] .banner-actions a {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(15, 23, 42, 0.16);
+  color: #0f172a;
+}
+
+body[data-theme="light"] .project-status {
+  border-color: rgba(15, 23, 42, 0.16);
+  color: #475569;
 }
 
 /* Contato */
@@ -965,6 +1078,12 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+  .basico-banner .banner-content {
+    padding-right: 0;
+  }
+  .metric-towers {
+    display: none;
+  }
   .banner-graphic {
     display: none;
   }
@@ -1054,7 +1173,6 @@ footer {
   }
 }
 
-
 /*Ajustes be estilo para ficar bonito*/
 @keyframes fadeUp {
   from {
@@ -1075,10 +1193,18 @@ footer {
   animation: fadeUp 0.8s ease-out forwards;
 }
 
-.avatar { animation-delay: 0.1s; }
-.hero-header { animation-delay: 0.25s; }
-.hero-text { animation-delay: 0.4s; }
-.hero-meta { animation-delay: 0.55s; }
+.avatar {
+  animation-delay: 0.1s;
+}
+.hero-header {
+  animation-delay: 0.25s;
+}
+.hero-text {
+  animation-delay: 0.4s;
+}
+.hero-meta {
+  animation-delay: 0.55s;
+}
 
 .avatar img {
   transition: transform 0.35s ease;
@@ -1089,7 +1215,9 @@ footer {
 }
 
 .btn-icon {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .btn-icon:hover {
@@ -1097,19 +1225,15 @@ footer {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-
 /*movimentações da imagem do avatar*/
 
 .avatar {
-    padding: 4px;
-    border-radius: 50%;
-    background: linear-gradient (135deg, #00ff99, #729bff);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  padding: 4px;
+  border-radius: 50%;
+  background: linear-gradient (135deg, #00ff99, #729bff);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
-.avatar img{
-    border-radius: 50%;
-    display: block;
-
+.avatar img {
+  border-radius: 50%;
+  display: block;
 }
-
-
